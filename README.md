@@ -1,6 +1,6 @@
-# ==========================================================
+# ============================================
 # Dockerfile para Nagios Core con correcciones de errores
-# ==========================================================
+# ============================================
 
 FROM ubuntu:latest
 
@@ -59,7 +59,7 @@ RUN htpasswd -b -c /usr/local/nagios/etc/htpasswd.users nagiosadmin nagios && \
 RUN echo '#!/bin/bash\n\
 # Iniciar Apache\n\
 service apache2 start\n\
-# Iniciar Nagios en modo daemon\n\
+# Iniciar Nagios en modo daemon
 /usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg\n\
 # Mantener el contenedor vivo y monitorear el log principal\n\
 tail -f /usr/local/nagios/var/nagios.log' > /start.sh && \
