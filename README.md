@@ -53,7 +53,7 @@ echo "ServerName localhost" >> /etc/apache2/apache2.conf
 Inicia Apache y Nagios en segundo plano, y mantiene el contenedor en ejecución
 RUN echo '#!/bin/bash
 
-Iniciar Apache
+# Iniciar Apache 
 service apache2 start
 
 Iniciar Nagios en modo daemon
