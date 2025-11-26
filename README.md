@@ -56,9 +56,9 @@ RUN htpasswd -b -c /usr/local/nagios/etc/htpasswd.users nagiosadmin nagios && \
 
 # 5. Script de arranque y Punto de Entrada
 # Inicia Apache y Nagios en segundo plano, y mantiene el contenedor en ejecución
-RUN echo '#!/bin/bash\n\
+RUN echo '#!/bin/bash
 # Iniciar Apache
-service apache2 start\n\
+service apache2 start
 # Iniciar Nagios en modo daemon
 /usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg\n\
 # Mantener el contenedor vivo y monitorear el log principal
