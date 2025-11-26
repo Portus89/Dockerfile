@@ -64,4 +64,5 @@ service apache2 start
 # Mantener el contenedor vivo y monitorear el log principal
 tail -f /usr/local/nagios/var/nagios.log' > /start.sh && \
 chmod +x /start.sh
+
 EXPOSE 80 443
