@@ -1,4 +1,5 @@
 =====================================
+=====================================
 Dockerfile para Nagios Core con correcciones de errores
 =====================================
 FROM ubuntu:latest
