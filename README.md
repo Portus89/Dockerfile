@@ -18,7 +18,7 @@ apt-get install -y --no-install-recommends
 wget build-essential unzip apache2 apache2-utils php
 libapache2-mod-php libgd-dev libperl-dev libssl-dev
 daemon make iputils-ping &&
-# Limpiar caché para reducir el tamaño de la imagen apt-get clean &&
+# Limpiar caché para reducir el tamaño de la imagen apt-get clean 
 rm -rf /var/lib/apt/lists/*
 
 2. Crear usuario/grupo y Compilar/Instalar Nagios Core
@@ -48,7 +48,7 @@ rm -rf ${WORKDIR}/plugins*
 # Crea el usuario 'nagiosadmin' con contraseña 'nagios'
 RUN htpasswd -b -c /usr/local/nagios/etc/htpasswd.users nagiosadmin nagios &&
 
-# Habilitar CGI y evitar advertencias a2enmod cgi &&
+# Habilitar CGI y evitar advertencias a2enmod cgi
 a2enmod rewrite &&
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
