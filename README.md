@@ -60,12 +60,8 @@ RUN echo '#!/bin/bash
 # Iniciar Apache
 service apache2 start
 # Iniciar Nagios en modo daemon
-/usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg\n\
+/usr/local/nagios/bin/nagios -d /usr/local/nagios/etc/nagios.cfg
 # Mantener el contenedor vivo y monitorear el log principal
 tail -f /usr/local/nagios/var/nagios.log' > /start.sh && \
 chmod +x /start.sh
 EXPOSE 80 443
-
-
-
-
