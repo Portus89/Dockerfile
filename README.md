@@ -1,7 +1,5 @@
+=====================================Dockerfile para Nagios Core con correcciones de errores
 =====================================
-Dockerfile para Nagios Core con correcciones de errores
-=====================================
-
 FROM ubuntu:latest
 
 LABEL maintainer="v.portus@duocuc.cl"
